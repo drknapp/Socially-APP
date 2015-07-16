@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layBack"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+        
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Title row -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <TextView
+        android:id="@+id/tv0"
+        android:text="Settings"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0094FF"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv1"
+        android:text="Background:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#0094FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+
+    <Switch
+        android:id="@+id/swBack"
+        android:switchMinWidth="80dp"
+        android:background="#0094FF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:checked="true"
+        android:textColor="#FFFFFF"
+        android:text=" " />
+    
+    <TextView
+        android:id="@+id/tv2"
+        android:text="Availability:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#0094FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+    
+    <Switch
+        android:id="@+id/switch3"
+        android:switchMinWidth="80dp"
+        android:background="#0094FF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:checked="true"
+        android:enabled="false"
+        android:text=" Online" />
+    
+    <TextView
+        android:id="@+id/tv3"
+        android:text="Cannot set availablitly in this version."
+        android:textSize="10sp"
+        android:textColor="#FF5252"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        />
+    
+</LinearLayout>

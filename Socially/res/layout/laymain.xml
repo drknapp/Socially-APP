@@ -1,0 +1,1468 @@
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Title row #0094FF #006FBF-->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+"
+
+<TextView 
+	android:id="@+id/tvTitle"
+    android:text="People Near You"
+    android:textSize="26sp"
+    android:textStyle="bold"
+    android:background="#006FBF"
+    android:textColor="#FFFFFF"
+    android:gravity="center"
+    android:layout_gravity="top"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:elevation="5dp"/>
+
+<ScrollView 
+    android:id="@+id/layBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+    	android:orientation="vertical">
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  20 containers for the 20 closest users  -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container0"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:layout_marginTop="2dp"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage0"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName0"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance0"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet0"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet0Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container1"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage1"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName1"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance1"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet1"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet1Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container2"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage2"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName2"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance2"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet2"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet2Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container3"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage3"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName3"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance3"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet3"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet3Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container4 "
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage4"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName4"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance4"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet4"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet4Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container5"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage5"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName5"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance5"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet5"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet5Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container6"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage6"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName6"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance6"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet6"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet6Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container7"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage7"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName7"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance7"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet7"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet7Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container8"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage8"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName8"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance8"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet8"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet8Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container9"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage9"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName9"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance9"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet9"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet9Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container10"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage10"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName10"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance10"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet10"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet10Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container11"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage11"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName11"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance11"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet11"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet11Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container12"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage12"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName12"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance12"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet12"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet12Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container13"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage13"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName13"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance13"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet13"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet13Clicked" />
+    	    
+    	</LinearLayout>
+    	
+    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!--  A single container containing the image of user  -->
+		<!--  the name of the user, the distance of the user   -->
+		<!--  and a meet butotn to interact with the user.     -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    	<LinearLayout
+    	    android:id="@+id/container14"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="64dp"
+    	    android:alpha="0.1"
+    	    android:orientation="horizontal">
+    	    
+    	    <ImageView 
+    	        android:id="@+id/ivImage14"
+    	        android:layout_width="62dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="start"
+    	        android:src="@drawable/pic_box"
+    	        android:layout_marginBottom="2dp"/>
+    	    
+    	    <LinearLayout
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="64dp"
+    	    	android:orientation="vertical">
+    	    
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="top"
+    	        	android:src="@drawable/divider"/>
+    	    	
+    	    	<TextView
+        			android:id="@+id/tvName14"
+        			android:text=""
+        			android:textSize="22sp"
+        			android:textStyle="bold"
+        			android:gravity="top"
+        			android:layout_gravity="start"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="8dp"/>
+    	    	
+    	    	<LinearLayout
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="wrap_content"
+    	    		android:layout_marginBottom="2dp"
+    	    		android:orientation="horizontal">
+    	    	
+    	    		<TextView
+        				android:text="Distance:"
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="8dp"/>
+    	    	
+    	    		<TextView
+    	    	   		android:id="@+id/tvDistance14"
+        				android:text=""
+        				android:textSize="18sp"
+        				android:gravity="top"
+        				android:layout_gravity="start"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_marginLeft="4dp"/>
+    	    		
+    	    		</LinearLayout>
+    	    	
+    	    	<ImageView 
+    	        	android:layout_width="234dp"
+    	        	android:layout_height="wrap_content"
+    	        	android:layout_gravity="bottom"
+    	        	android:src="@drawable/divider"
+    	        	android:layout_marginBottom="2dp" />
+    	    
+    		</LinearLayout>
+    		
+    	    <Button
+    	        android:id="@+id/btnMeet14"
+    	        android:text="Meet"
+    	        android:textSize="18sp"
+    	        android:textStyle="bold"
+    	        android:textColor="#FFFFFF"
+    	        android:textAllCaps="false"
+    	        android:layout_width="64dp"
+    	        android:layout_height="match_parent"
+    	        android:layout_gravity="end"
+    	        android:clickable="false"
+    	        android:background="#0094FF"
+    	        android:layout_marginBottom="2dp"
+    	        android:onClick="onMeet14Clicked" />
+    	    
+    	</LinearLayout>
+	
+	</LinearLayout>
+</ScrollView>
+</LinearLayout>
