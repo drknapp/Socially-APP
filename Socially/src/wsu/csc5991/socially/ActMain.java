@@ -38,26 +38,26 @@ public class ActMain extends Activity {
     
     // Variables to retrieve information 
     static Location loc0 = new Location("");
-    private static Drawable image0;
+    //private static Drawable image0;
     private static String name0;
     private double distancex0;
     private double distancey0;
     
     static Location loc1 = new Location("");
-    private static Drawable image1;
+    //private static Drawable image1;
     private static String name1;
     private double distancex1;
     private double distancey1;
     
     // Variables per container
     private static LinearLayout container0;
-    private static ImageView ivImage0;
+    //private static ImageView ivImage0;
     private static TextView tvName0;
     private static TextView tvDistance0;
     private static Button btnMeet0;
     
     private static LinearLayout container1;
-    private static ImageView ivImage1;
+    //private static ImageView ivImage1;
     private static TextView tvName1;
     private static TextView tvDistance1;
     private static Button btnMeet1;
@@ -135,25 +135,25 @@ public class ActMain extends Activity {
 		//----------------------------------------------------------------
 	    // Retrieve information
 	    //----------------------------------------------------------------
-		name0 = "Detroit City";
+		name0 = "Test Name1";
 		distancex0 = 42.3354205;
 		distancey0 = -83.1835290;
-		image0 = getDrawable(R.drawable.pic2);
-		name1 = "Wayne State";
+		//image0 = getDrawable(R.drawable.pic2);
+		name1 = "Test Name2";
 		distancex1 = 42.3357003;
 		distancey1 = -83.1810000;
-		image1 = getDrawable(R.drawable.pic1);
+		//image1 = getDrawable(R.drawable.pic1);
 		
 		//Define container 1 controls
 		container0 = (LinearLayout) findViewById(R.id.container0);
-		ivImage0 = (ImageView) findViewById(R.id.ivImage0);
+		//ivImage0 = (ImageView) findViewById(R.id.ivImage0);
 		tvName0 = (TextView) findViewById(R.id.tvName0);
 		tvDistance0 = (TextView) findViewById(R.id.tvDistance0);
 		btnMeet0 = (Button) findViewById(R.id.btnMeet0);
 		
 		//Define container 2 controls
 		container1 = (LinearLayout) findViewById(R.id.container1);
-		ivImage1 = (ImageView) findViewById(R.id.ivImage1);
+		//ivImage1 = (ImageView) findViewById(R.id.ivImage1);
 		tvName1 = (TextView) findViewById(R.id.tvName1);
 		tvDistance1 = (TextView) findViewById(R.id.tvDistance1);
 		btnMeet1 = (Button) findViewById(R.id.btnMeet1);		
@@ -254,7 +254,7 @@ public class ActMain extends Activity {
 	    		toast.show();
 			}
 		});
-		builder.setIcon(R.drawable.ic_launcher);
+		builder.setIcon(R.drawable.pic_box);
 		builder.show();
     }
     
@@ -285,7 +285,7 @@ public class ActMain extends Activity {
 	    		toast.show();
 			}
 		});
-		builder.setIcon(R.drawable.ic_launcher);
+		builder.setIcon(R.drawable.pic_box);
 		builder.show();
     }
     
@@ -309,7 +309,7 @@ public class ActMain extends Activity {
     		if (dM0 <= 300){
     			//Set container 1 controls from retrieved information
     			container0.setAlpha(1);
-    			ivImage0.setBackground(image0);
+    			//ivImage0.setBackground(image0);
     			tvName0.setText(name0);
     			if (dM0 <= 50){
     				tvDistance0.setText("1 minute away");
@@ -328,11 +328,17 @@ public class ActMain extends Activity {
     			}
     			btnMeet0.setClickable(true);
     		}
+    		else{
+    			container0.setAlpha(0.1f);
+    			tvName0.setText("");
+    			tvDistance0.setText("");
+    			btnMeet0.setClickable(false);
+    		}
     		
     		if (dM1 <= 300){
     			//Set container 2 controls from retrieved information
     			container1.setAlpha(1);
-    			ivImage1.setBackground(image1);
+    			//ivImage1.setBackground(image1);
     			tvName1.setText(name1);
     			if (dM1 <= 50){
     				tvDistance1.setText("1 minute away");
@@ -350,6 +356,12 @@ public class ActMain extends Activity {
     				tvDistance1.setText("5 minutes away");
     			}
     			btnMeet1.setClickable(true);
+    		}
+    		else{
+    			container1.setAlpha(0.1f);
+    			tvName1.setText("");
+    			tvDistance1.setText("");
+    			btnMeet1.setClickable(false);
     		}
         }
 
