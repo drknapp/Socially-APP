@@ -3,6 +3,7 @@ package wsu.csc5991.socially;
 //Import Android packages
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Application;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,6 +11,8 @@ import android.view.View;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.ClipData.Item;
+import android.content.res.Resources.Theme;
 import android.graphics.Color;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -23,6 +26,9 @@ import android.os.Handler;
 import android.os.Message;
 import android.graphics.drawable.Drawable;
 
+
+
+
 //Import Java packages
 import java.text.DecimalFormat;
 import java.util.Timer;
@@ -34,6 +40,7 @@ public class ActMain extends Activity {
     //----------------------------------------------------------------
     // Declare control variables
     private View layBack;
+    private static TextView tvTitle;
     private Toast toast;
     
     // Variables to retrieve information 
@@ -122,6 +129,7 @@ public class ActMain extends Activity {
 		
 		//Define control for background color change
 		layBack = (View) findViewById(R.id.layBack);
+		tvTitle = (TextView) findViewById(R.id.tvTitle);
 		//-----------------------------------------------------------
 		//Initialize background color based on stored values
 		//-----------------------------------------------------------
@@ -213,9 +221,14 @@ public class ActMain extends Activity {
 		    }
 		    public void onStatusChanged(String provider, int status, Bundle extras) {}
 
-		    public void onProviderEnabled(String provider) {}
+		    public void onProviderEnabled(String provider) {
+		    	tvTitle.setBackgroundColor(Color.parseColor("#03C284"));
+    			tvTitle.setText("Location turned on");
+		    }
 
 		    public void onProviderDisabled(String provider) {
+		    	tvTitle.setBackgroundColor(Color.parseColor("#FF5252"));
+    			tvTitle.setText("Turn on location!");
 		    }
 		  };
 
@@ -304,6 +317,8 @@ public class ActMain extends Activity {
     		if (shared.currentLocation != null){
     			dM0 = shared.currentLocation.distanceTo(loc0);
     			dM1 = shared.currentLocation.distanceTo(loc1);
+    			tvTitle.setBackgroundColor(Color.parseColor("#006FBF"));
+    			tvTitle.setText("People Near You");
     		}
     		
     		if (dM0 <= 300){
